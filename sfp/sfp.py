@@ -9,7 +9,7 @@ def tail(iterable):
 
 
 def pipe(*args):
-    """All the arguments given to this function will be passed as param to 
+    """All the arguments given to this function will be passed as param to
     `reduce` and it will return a function with all closures set to pipe in."""
     return reduce(_pipe, args)
 
